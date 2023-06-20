@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: $text-dark;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  //   section {
+  //     outline: 1px solid red;
+  //   }
+
+  //   div {
+  //     outline: 1px solid blue;
+  //   }
+
+  //   h2,
+  //   p,
+  //   button {
+  //     outline: 1px solid green;
+  //   }
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  text-align: center;
+
+  @media screen and (min-width: $small) {
+  }
+
+  @media screen and (min-width: $medium) {
+  }
+
+  @media screen and (min-width: $large) {
+    max-width: $large;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// typography
+
+h1 {
+}
+
+h2 {
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.marked {
+  position: relative;
+  font-weight: 500;
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $accent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+  }
+}
