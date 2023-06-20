@@ -295,6 +295,7 @@ header {
   .testimonial-item__image {
     order: 1;
     max-height: none;
+    height: auto;
     max-width: min(582px, 50%);
   }
 }

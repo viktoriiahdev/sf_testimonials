@@ -85,6 +85,7 @@
     @media screen and (min-width: $medium) {
       order: 1;
       max-height: none;
+      height: auto;
       max-width: min(582px, 50%);
     }
   }
